@@ -3,11 +3,15 @@ $base-font-size: 16px;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;
-$base-font-family: 'Rock Salt', cursive, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-font-family: 'Rock Salt', cursive;
 $base-line-height: 28px;
 
 *, *::after, *::before {
   box-sizing: border-box;
+}
+
+@supports (font: -apple-systen-body) {
+  $base-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 body {

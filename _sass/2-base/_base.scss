@@ -10,6 +10,10 @@ $base-line-height: 28px;
   box-sizing: border-box;
 }
 
+@supports (font: -apple-systen-body) {
+  $base-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
